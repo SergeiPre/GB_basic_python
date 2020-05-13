@@ -9,17 +9,19 @@ gain = input('введите значение выручки фирмы (euro): 
 costs = input('введите значение издержек фирмы (euro): ', )
 gain = int(gain)
 costs = int(costs)
-if gain > costs:
-    p = gain - costs
-    r = p / gain * 100
-    print('Прибыль! Выручка больше издержек')
-    print('Рентабильность выручкии составляет: %.2f '% (r), '%')
-    e = int(input('Введите численность сотрудников фирым: '))
-    p_e = p / e
-    print('Прибль фикрмы в расчете на одного сотрудника составляет: %.2f '% (p_e), 'euro' )
 
-    if costs > gain:
-        print('Убыток! Издержки больше выручки')
+if gain > costs:
+    profit = gain - costs
+    rentability = profit / gain * 100
+    print('Прибыль! Выручка больше издержек')
+    print('Рентабильность выручкии составляет: %.2f '% (rentability), '%')
+    empl_numbers = input('Введите численность сотрудников фирым: ')
+    empl_numbers = int(empl_numbers)
+    profit_employee = profit / empl_numbers
+    print('Прибль фирмы в расчете на одного сотрудника составляет: %.2f '% (profit_employee), 'euro' )
+
+else:
+    print('Убыток! Издержки больше выручки')
 
 
 
