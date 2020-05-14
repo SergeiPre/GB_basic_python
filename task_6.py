@@ -13,7 +13,7 @@
 Ответ: на 6-й день спортсмен достиг результата — не менее 3 км.
 """
 a = 2
-b = 10
+b = 3
 i = 0
 
 while True:
@@ -22,7 +22,7 @@ while True:
         print(f'{i}-й день: {a} км.')
     break
 
-while  True:
+while True:
         a = a + a * 0.1
         i += 1
         print(f'{i}-й день: {a:.2f} км.')
