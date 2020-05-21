@@ -26,4 +26,4 @@ print(type(m_dict))
 print(m_dict[m_numb])
 
 print(type(m_list))
-print(m_list[m_numb // 3])
+print(m_list[m_numb // 3]) # %4
