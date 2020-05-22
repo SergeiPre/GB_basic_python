@@ -5,3 +5,14 @@
 Каждое слово состоит из латинских букв в нижнем регистре. Сделать вывод исходной строки,
 но каждое слово должно начинаться с заглавной буквы. Необходимо использовать написанную ранее функцию int_func().
 """
+
+def int_func(my_word: str):
+    return ''.join((my_word[0].upper(), my_word[1:]))
+
+print(int_func('московский'))
+
+def my_func2(my_words: str):
+    return ' '.join(map(int_func, my_words.split(' ')))
+
+print(my_func2('российская федерация'))
+
