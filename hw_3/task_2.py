@@ -15,3 +15,8 @@ def second_func(user_name, user_surname, user_burn, user_city, user_email, user_
     print(f'имя: {user_name}; фамилия: {user_surname}; год рождения: {user_burn}; город проживания: {user_city}; email: {user_email}; телефон: {user_number}.')
 
 print(second_func(user_name, user_surname, user_burn, user_city, user_email, user_number))
+
+
+#
+# name = kwargs.get('name', '')
+# surname  =

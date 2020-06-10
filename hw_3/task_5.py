@@ -9,7 +9,7 @@
 
 def sum_func(*args):
     result = 0
-    out_el = False
+    out_el = False #exit_flag
     for el in args:
         try:
             result += float(el) if el else 0
