@@ -6,7 +6,7 @@
 
 from sys import argv
 
-script_name, work_time, work_net_per_hour, prime_in_per_cent = argv
+script_name, work_time, work_net_per_hour, prime_in_per_cent, *__ = argv # *__ для упаковки лишних введенных элементов
 print('Выработка в часах: ', work_time)
 print('Ставка (дол. в час): ', work_net_per_hour)
 print(f'Премия за исполнительность в процентах от выработанных часов: {prime_in_per_cent} %')
